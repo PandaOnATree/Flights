@@ -221,7 +221,6 @@ def modelfit(name_of_mod, x_train, y_train, x_test, y_test,
         ax1.set_ylabel('Log Loss')
         ax1.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
         ax1.set_xlabel('n_estimators')
-        ax1.set_title('XGBoost Log Loss')
         
         # Plot classification max error
         ax2.plot(x_axis, results['validation_0']['error'], label='Train',
@@ -231,10 +230,9 @@ def modelfit(name_of_mod, x_train, y_train, x_test, y_test,
                  color='orange'
                  )
         ax2.legend()
-        ax2.set_ylabel('Classification Error')
+        ax2.set_ylabel('Max Error')
         ax2.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
         ax2.set_xlabel('n_estimators')
-        ax2.set_title('XGBoost Classification Error')
         
         # Save the plots
         path_fig_test = dir_name+'/'+name_of_mod+'_test'+'.png'
