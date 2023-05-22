@@ -38,8 +38,8 @@ import joblib
 #------------------------------------------------------------------------------
 
 
-inputs = pd.read_csv("inputs.csv")
-targets = pd.read_csv("targets.csv")
+inputs = pd.read_csv("src/inputs.csv")
+targets = pd.read_csv("src/targets.csv")
 targets = targets["Class"]
 
 

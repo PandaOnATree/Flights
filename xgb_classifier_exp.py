@@ -26,8 +26,8 @@ from sklearn.model_selection import train_test_split
 #------------------------------------------------------------------------------
 
 
-inputs_exp = pd.read_csv("inputs_exp.csv")
-targets_exp = pd.read_csv("targets_exp.csv")
+inputs_exp = pd.read_csv("src/inputs_exp.csv")
+targets_exp = pd.read_csv("src/targets_exp.csv")
 targets_exp = targets_exp["Class"]
 
 
