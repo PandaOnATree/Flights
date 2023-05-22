@@ -1,0 +1,22 @@
+******************************************************************************************
+cbc - model report:
+------------------------------------------------------------------------------------------
+
+Model: <catboost.core.CatBoostClassifier object at 0x7fba8c4561a0>
+
+
+Recall (Test): 0.9307
+Precision (Test): 0.9279
+F1 score (Test): 0.9293
+
+Cohen Kappa (Test): 0.8569
+MCC (Test): 0.8569
+
+AUC Score (Train): 0.9827
+AUC Score (Test): 0.9788
+Accuracy (Train): 0.9358
+Accuracy (Test): 0.9284
+
+LogLoss (Test): 0.2207
+
+******************************************************************************************

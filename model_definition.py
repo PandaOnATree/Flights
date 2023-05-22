@@ -89,9 +89,9 @@ from scipy.stats import randint
 
 import functools
 
-from sklearn.metrics import make_scorer, fbeta_score, brier_score_loss
+#from sklearn.metrics import make_scorer, fbeta_score, brier_score_loss
 
-#from sklearn.metrics import roc_curve, precision_recall_curve
+from sklearn.metrics import roc_curve, precision_recall_curve
 
 
 from sklearn.metrics import RocCurveDisplay

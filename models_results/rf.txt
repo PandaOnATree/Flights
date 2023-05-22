@@ -1,0 +1,24 @@
+******************************************************************************************
+rf - model report:
+------------------------------------------------------------------------------------------
+
+Model: RandomForestClassifier(class_weight={0: 1, 1: 1.09}, criterion='log_loss',
+                       max_depth=6, max_features=10, n_estimators=300,
+                       n_jobs=-1, random_state=27)
+
+
+Recall (Test): 0.7518
+Precision (Test): 0.7526
+F1 score (Test): 0.7522
+
+Cohen Kappa (Test): 0.4997
+MCC (Test): 0.4997
+
+AUC Score (Train): 0.8309
+AUC Score (Test): 0.8259
+Accuracy (Train): 0.7551
+Accuracy (Test): 0.7499
+
+LogLoss (Test): 0.5041
+
+******************************************************************************************

@@ -1,0 +1,32 @@
+******************************************************************************************
+xgb_exp - model report:
+------------------------------------------------------------------------------------------
+
+Model: XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.8, early_stopping_rounds=None,
+              enable_categorical=True, eval_metric=['error', 'logloss'],
+              feature_types=None, gamma=0, gpu_id=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=0.2, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=1, max_delta_step=None, max_depth=6,
+              max_leaves=None, min_child_weight=0.8, missing=nan,
+              monotone_constraints=None, n_estimators=300, n_jobs=None,
+              nthread=4, num_parallel_tree=None, predictor=None, ...)
+
+
+Recall (Test): 0.4556
+Precision (Test): 0.5443
+F1 score (Test): 0.4960
+
+Cohen Kappa (Test): 0.1093
+MCC (Test): 0.1107
+
+AUC Score (Train): 0.6113
+AUC Score (Test): 0.5774
+Accuracy (Train): 0.5814
+Accuracy (Test): 0.5589
+
+LogLoss (Test): 0.6826
+
+******************************************************************************************
