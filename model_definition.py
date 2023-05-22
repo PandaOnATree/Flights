@@ -91,7 +91,7 @@ import functools
 
 from sklearn.metrics import make_scorer, fbeta_score, brier_score_loss
 
-from sklearn.metrics import roc_curve, precision_recall_curve
+#from sklearn.metrics import roc_curve, precision_recall_curve
 
 
 from sklearn.metrics import RocCurveDisplay
@@ -172,7 +172,8 @@ print("All basic versions of considered models loaded succesfully.")
 
 
 # Define a function for basic model training and printing results
-def modelfit(name_of_mod, x_train, y_train, x_test, y_test, cat_features=cat_features, **model):
+def modelfit(name_of_mod, x_train, y_train, x_test, y_test, 
+             cat_features=cat_features, **model):
     
     if type(name_of_mod) is not str:
         print("name_of_mod has to be of a string type!")
@@ -210,8 +211,12 @@ def modelfit(name_of_mod, x_train, y_train, x_test, y_test, cat_features=cat_fea
                      fontsize=16, y=1.1)
         
         # Plot log loss
-        ax1.plot(x_axis, results['validation_0']['logloss'], label='Train')
-        ax1.plot(x_axis, results['validation_1']['logloss'], label='Test')
+        ax1.plot(x_axis, results['validation_0']['logloss'], label='Train',
+                 color='green'
+                 )
+        ax1.plot(x_axis, results['validation_1']['logloss'], label='Test',
+                 color='orange'
+                 )
         ax1.legend()
         ax1.set_ylabel('Log Loss')
         ax1.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
@@ -219,8 +224,12 @@ def modelfit(name_of_mod, x_train, y_train, x_test, y_test, cat_features=cat_fea
         ax1.set_title('XGBoost Log Loss')
         
         # Plot classification max error
-        ax2.plot(x_axis, results['validation_0']['error'], label='Train')
-        ax2.plot(x_axis, results['validation_1']['error'], label='Test')
+        ax2.plot(x_axis, results['validation_0']['error'], label='Train',
+                 color='green'
+                 )
+        ax2.plot(x_axis, results['validation_1']['error'], label='Test',
+                 color='orange'
+                 )
         ax2.legend()
         ax2.set_ylabel('Classification Error')
         ax2.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
