@@ -2,6 +2,8 @@
 
 ## Short description 
 
+This is a Kaggle project: https://www.kaggle.com/datasets/ulrikthygepedersen/airlines-delay
+
 In this project the chances of a flight being delayed or not are analysed. It is a binary classification problem. We train 3 models: XGBoostClassifier, CatBoostClassifier and RandomForestClassifier to predict whether a flights within the US is delayed or not. The dataset contains many categorical features, such as names of airports and names of airlines.
 
 ## Methodology
